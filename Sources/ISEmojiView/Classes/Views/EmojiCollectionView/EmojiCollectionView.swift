@@ -112,7 +112,9 @@ internal class EmojiCollectionView: UIView {
     
     internal func updateRecentsEmojis(_ emojis: [Emoji]) {
         self.emojis[0].emojis = emojis
-        collectionView.reloadSections(IndexSet(integer: 0))
+        // In order to avoid updating recents list realtime and disable reloading collection view
+        // Added by: Sujith Thankachan on 01/09/2022
+        //collectionView.reloadSections(IndexSet(integer: 0))
     }
     
     internal func scrollToCategory(_ category: Category) {
