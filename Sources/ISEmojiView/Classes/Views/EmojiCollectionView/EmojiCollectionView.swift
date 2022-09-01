@@ -41,7 +41,7 @@ internal class EmojiCollectionView: UIView {
     
     internal var emojis: [EmojiCategory]! {
         didSet {
-            collectionView.reloadData()
+//             collectionView.reloadData()
         }
     }
     
