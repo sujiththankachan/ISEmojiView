@@ -36,7 +36,7 @@ final internal class CategoriesBottomView: UIView {
     
     internal var categories: [Category]! {
         didSet {
-            collectionView.reloadData()
+//             collectionView.reloadData()
             
             if let selectedItems = collectionView.indexPathsForSelectedItems, selectedItems.isEmpty {
                 selectFirstCell()
